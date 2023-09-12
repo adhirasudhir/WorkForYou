@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+    <!-- Coding by CodingLab | www.codinglabweb.com -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Card Slider</title>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="/static/css/profile-swiper-bundle.min.css">
+            <link rel="stylesheet" type="text/css" href=" {% static '/css/home.css' %} ">
+        <!-- CSS -->
+        <link rel="stylesheet" href="/static/css/profile-style.css">
+
+    </head>
+    <body>
+
+      <div class="back-homebar">
+<div class="home-bar">
+<nav id="nav-home">
+    <div class="back-nav">
+        <div class="toptal-logo">
+            <img width="130" height="60" src="{% static 'img/wfy.png' %}">
+            <a title="W.F.Y."></a>
+
+            </div>
+        <br>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'profile' %}">Freelancers</a>
+            <a href="{% url 'services' %}">Services</a>
+            <a href="#Why">Projects</a>
+            <a href="{% url 'contact' %}">Contact Us</a>
+            <a href="{% url 'about' %}">About Us</a>
+        </div>
+
+         <ul class="ul">
+            <li>
+                <a href="{% url 'Register' %}">Apply as a Freelancer</a>
+            </li>
+
+            <li>
+                <a href="{% url 'Login' %}">Log In</a>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+</div>
+      <br><br><br>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/img/abhi.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"> Abhishek Shukla</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                           <a href="{% url 'after-profile' %}">
+                                <button class="button swiper-no-swiping"><a href=" https://iabhi1703.github.io/baba/" >View More</a></button>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/img/ss.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Sandhya Prajapati</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <a href="{% url 'after-profile' %}">
+                                <button class="button swiper-no-swiping"><a href=" http://ram2021.pythonanywhere.com/">View More</a></button>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/img/r.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Rahila</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <a href="{% url 'after-profile' %}">
+                                <button class="button swiper-no-swiping"><a href="http://rahila7999.pythonanywhere.com/">View More</a></button>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/img/im.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Imrana Khanam</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <a href="{% url 'after-profile' %}">
+                                <button class="button swiper-no-swiping"><a href="https://immo1999.github.io/Khanam_CV/">View More</a></button>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/img/monika.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Monika Pandey</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <a href="{% url 'after-profile' %}">
+                                <button class="button swiper-no-swiping"><a href=" http://lbswatantra51.pythonanywhere.com/">View More</a></button>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/img/anju.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Anju Luthra</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <a href="{% url 'after-profile' %}">
+                                <button class="button swiper-no-swiping"><a href=" http://anjuluthra01.pythonanywhere.com/">View More</a></button>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/img/archu.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Archana Yadav</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <a href="{% url 'after-profile' %}">
+                                <button class="button swiper-no-swiping"><a href=" http://yadavarchana5120015.pythonanywhere.com/">View More</a></button>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/img/shivi.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Shivani</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <a href="{% url 'after-profile' %}">
+                                <button class="button swiper-no-swiping"><a href=" http://shivi.pythonanywhere.com/">View More</a></button>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/img/kumkum.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Kumkum Singh</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <a href="{% url 'after-profile' %}">
+                                <button class="button swiper-no-swiping"><a href="http://kumkum.pythonanywhere.com/ ">View More</a></button>
+                           </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+           <div class="swiper-button-prev swiper-navBtn"></div>
+          <!--  <div class="swiper-pagination"></div> -->
+        </div>
+        
+    </body>
+
+    <!-- Swiper JS -->
+    <script src="/static/js/profile-swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="/static/js/profile-script.js"></script>
+</html>

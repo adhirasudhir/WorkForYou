@@ -1,0 +1,77 @@
+{% load static %}
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href=" {% static '/css/contact.css' %} ">
+	<link rel="stylesheet" type="text/css" href=" {% static '/css/home.css' %} ">
+	<title>Contact Page</title>
+</head>
+<body>
+ <div class="back-homebar">
+<div class="home-bar">
+<nav id="nav-home">
+    <div class="back-nav">
+        <div>
+        <a href="http://127.0.0.1:8000/admin/login/?next=/admin/">
+
+            <img width="130" height="60" src="{% static 'img/wfy.png' %}" >
+            </a></div>
+        <div class="toptal-logo"></div>
+        <br>
+            <a href="{% url 'index' %}">Home</a>
+
+            <a href="{% url 'services' %}">Services</a>
+            <a href="https://myhelppagemain.000webhostapp.com/">Projects</a>
+            <a href="{% url 'contact' %}">Contact Us</a>
+            <a href="{% url 'about' %}">About Us</a>
+        </div>
+
+        <ul class="ul">
+            <li>
+                <a href="{% url 'Register' %}">Sign Up</a>
+            </li>
+
+            <li>
+                <a  href="{% url 'Login' %}">Sign In</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+</div>
+</div>
+	<div class="square">
+		<i style="--clr:#00ff0a;"></i>
+		<i style="--clr:#ff0057;"></i>
+		<i style="--clr:#fffd44;"></i>
+		<div class="login">
+
+			<h2>Contact Us</h2>
+			<form method="POST" action="{% url 'contact' %}">
+    {% csrf_token %}
+    <div class="inputBx">
+        <input type="text" name="full_name" placeholder="Full Name">
+    </div><br>
+    <div class="inputBx">
+        <input type="email" name="email" placeholder="Email">
+    </div><br>
+    <div class="inputBx">
+        <input type="text" name="feedback" placeholder="Your Valuable Feedback!">
+    </div><br>
+
+    <div class="inputBx">
+        <input type="submit" value="Connect">
+    </div>
+</form>
+		</div>
+	</div>
+</body>
+</html>

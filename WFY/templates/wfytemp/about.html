@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Team Page</title>
+  <link rel="stylesheet" type="text/css" href=" {% static '/css/about.css' %} ">
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/home.css' %} ">
+</head>
+<body>
+    <div class="back-homebar">
+<div class="home-bar">
+<nav id="nav-home">
+    <div class="back-nav">
+      <div>
+        <a href="http://127.0.0.1:8000/admin/login/?next=/admin/">
+
+            <img width="130" height="60" src="{% static 'img/wfy.png' %}" >
+            </a></div>
+        <div class="toptal-logo"></div>
+        <br>
+            <a href="{% url 'index' %}">Home</a>
+
+            <a href="{% url 'services' %}">Services</a>
+            <a href="https://myhelppagemain.000webhostapp.com/">Projects</a>
+            <a href="{% url 'contact' %}">Contact Us</a>
+            <a href="{% url 'about' %}">About Us</a>
+        </div>
+
+        <ul class="ul">
+            <li>
+                <a href="{% url 'Register' %}">Sign Up</a>
+            </li>
+
+            <li>
+                <a  href="{% url 'Login' %}">Sign In</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+</div>
+</div><br><br>
+    <center><h1><font color ="white">About Us - W.F.Y. Team</font></h1></center>
+<!-- partial:index.partial.html -->
+<div class="container">
+        <div class="box" style="--clr:#46cbdd;">
+            <div class="content">
+                <div class="icon"><ion-icon name="brush"></ion-icon>
+                    <img src="k.jpeg"  style="width:100%">
+                </div>
+                <div class="text">
+                    <h3>Sudhir</h3>
+                    <p>(Team Leader)<br> ADIT Student</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="--clr:#dacd5f;">
+            <div class="content">
+                <div class="icon"><ion-icon name="brush"></ion-icon>
+                    <img src="{% static 'img/k.jpeg' %}" style="width:100%">
+                </div>
+                <div class="text">
+                    <h3>Krati </h3>
+                    <p>ADIT Student</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="--clr:#f8ac1e;">
+            <div class="content">
+                <div class="icon"><ion-icon name="brush"></ion-icon>
+                    <img src="k.jpeg"  style="width:100%">
+                </div>
+                <div class="text">
+                    <h3>Drishti</h3>
+                    <p>ADIT Student</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="--clr:#89ec5b;">
+            <div class="content">
+                <div class="icon"><ion-icon name="brush"></ion-icon>
+                    <img src="k.jpeg"  style="width:100%">
+                </div>
+                <div class="text">
+                    <h3>Nisha</h3>
+                    <p>ADIT Student</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- partial -->
+  <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+<script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/home.css' %} ">
+     <link rel="stylesheet" href="/static/css/profile-swiper-bundle.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="/static/css/button-style.css">
+    <title>Dashboard Page</title>
+</head>
+<body>
+<div class="home-bar">
+
+<nav id="nav-home">
+
+
+<ul class="ul">
+    <a href="{% url 'Logout' %}" name = 'Logout'>
+        <button class="btn btn-outline-primary ms-3">Logout</button>
+    </a>
+        </ul>
+
+    </nav>
+</div><center><h1><font color ="white">Hire Developer's</font></h1></center>
+
+
+<div class="button-container">
+  <div class="button-row">
+    <a href="{% url 'profile1' %}">
+      <i></i>
+      <i></i>
+      <span>HTML & CSS</span>
+    </a>
+    <a href="{% url 'profile2' %}">
+      <i></i>
+      <i></i>
+      <span>JavaScripts</span>
+    </a>
+    <a href="{% url 'profile3' %}">
+      <i></i>
+      <i></i>
+      <span>Lravel</span>
+    </a>
+  </div>
+  <div class="button-row">
+    <a href="{% url 'profile4' %}">
+      <i></i>
+      <i></i>
+      <span>Python</span>
+    </a>
+    <a href="{% url 'profile5' %}">
+      <i></i>
+      <i></i>
+      <span>PHP</span>
+    </a>
+    <a href="{% url 'profile6' %}">
+      <i></i>
+      <i></i>
+      <span>MySQL</span>
+    </a>
+  </div>
+  <div class="button-row">
+    <a href="{% url 'profile7' %}">
+      <i></i>
+      <i></i>
+      <span>Django</span>
+    </a>
+    <a href="{% url 'profile8' %}">
+      <i></i>
+      <i></i>
+      <span>Bootstrap</span>
+    </a>
+    <a href="{% url 'profile9' %}">
+      <i></i>
+      <i></i>
+      <span>MongoDB</span>
+    </a>
+  </div>
+
+</div>
+  <script src="/static/js/button-script.js"></script>
+</body>
+</html>
